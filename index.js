@@ -2,6 +2,7 @@ const express = require("express");
 const hbs = require("hbs");
 const mongoose = require("mongoose");
 const app = express();
+require('dotenv').config()
 const Detail = require("./src/models/detail");
 const routes = require("./src/routes/main");
 // const ejs = require("ejs");
@@ -24,7 +25,7 @@ hbs.registerPartials("views/partials");
 
 //db connect
 mongoose
-  .connect("mongodb://0.0.0.0:27017/NewsBlog", {
+  .connect(`${process.env.MONGO_CONNECT}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     // useCreateIndex:true
