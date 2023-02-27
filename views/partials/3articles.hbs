@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+    #article_image2
+    {
+        width: 30%;
+        float: left;
+    }
+    #article_image2 img{
+        width: 90%;
+        margin-right: 10%;
+    height: 100% !important;
+    object-fit: cover;
+    }
+
+    #article2_container
+    {
+        width: 70%;
+        float: right;
+        max-height: 100%;
+        overflow: hidden;
+        text-align: justify;
+    }
+
+   /** #article_image2 img {
+        width: 200px;
+        margin-right: 10%;
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    #article2_container {
+        width: 507px;
+        float: right;
+        max-height: 100%;
+        overflow: hidden;
+        text-align: justify;
+    }
+    **/
+
+    #container2 {
+        margin-top: 1%;
+        display: flex;
+        flex-wrap: nowrap;
+        height: 30%;
+        width: 50%;
+        margin-left: 11%;
+        float: left;
+        margin-bottom: 1%;
+    }
+</style>
+
+<body>
+    {{#each articles3}}
+    <div id="container2">
+        
+        <div id="article_image2">
+            <img src= {{this.imageUrl}} alt="flower">
+        </div>
+        <div id="article2_container">
+            <div>
+                <p style="font-size: 21px; font-family: 'Raleway'; font-weight: 600;">
+                  <a href={{this.Url}} style="text-decoration: none; color: black;">{{this.title}}</a>
+                </p>
+            </div>
+            
+            <div>
+                <p style="font-size: 10px; font-family: 'Raleway'; margin-top: -2%;">
+                    {{this.date}}
+                </p>
+            </div>
+            <div>
+                <p style="font-size: 15px; font-family: 'Raleway'; color: #909090; line-height: 25px; float:right;">
+                    {{this.content}}</p>
+            </div>
+        </div>
+    </div>
+     {{/each}}
+
+</body>
+
+</html>

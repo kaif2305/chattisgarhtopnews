@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/css/right_section_style.css">
+
+</head>
+
+<body>
+
+    <section class="right_container">
+        <span id="verticle_line"></span>
+        <div id="bulletin">
+            <h4>NEWS BULLETIN</h4>
+        </div>
+
+        {{#each bulletin_news}}
+        <a href="{{this.Url}}" style="text-decoration: none;">
+
+            <div class="news_blog_container">
+                <div class="outer_container">
+                    <div id="image_container1">
+                        <img src="{{this.imageUrl}}" style="max-width: 100%; max-height: max-content;" alt="image">
+                    </div>
+                    <div id="breakingnews_container">
+                    </div>
+                    <div id="b_news">
+                        <p>TOP NEWS</p>
+                    </div>
+
+                    <div class="text_block">
+                        <p>{{this.title}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        {{/each}}
+
+        <div class="advertisement">
+            <a href="https://www.facebook.com/ChhattisgarhCMO?mibextid=ZbWKwL" target="_blank">
+                <img src="/static/images/advt.jfif" alt="">
+            </a>
+        </div>
+
+
+        <div id="subscribe">
+            <h4>SUBSCRIBE</h4>
+        </div>
+        <form class="subscribe_form" style="margin-top: 15%; ">
+            <input type="text" name="r_email" id='r_email' placeholder="Your Email">
+            <button id="sub_btn">SUBSCRIBE</button>
+        </form>
+
+        <div class="tweet-msg1">
+            <blockquote class="twitter-tweet">
+                <p lang="hi" dir="ltr">छत्तीसगढ़ में मेडिकल और इंजीनियरिंग प्रवेश परीक्षा के लिए अनुसूचित जाति एवं
+                    जनजाति के विद्यार्थियो को मिलेगी निःशुल्क कोचिंग</p>&mdash; ChhattisgarhTopNews. (@CgTopNews) <a
+                    href="https://twitter.com/CgTopNews/status/779420816593199104?ref_src=twsrc%5Etfw">September 23,
+                    2016</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

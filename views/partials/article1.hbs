@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/css/article1_style.css">
+</head>
+
+<body>
+    <div class="main_container1">
+        <div id="gener">
+            <p>{{article1.genre}}</p>
+        </div>
+        <div id="article_tagline">
+            <p id="main_tag">{{article1.title}}</p>
+            <p id="date_tag">{{article1.date}}</p>
+        </div>
+        <div id="article_content">
+            <div id="article_img">
+                <img id="article1-img" src={{article1.imageUrl}} style="max-height: 100%;" alt="News Article image">
+            </div>
+            <div id="article_text">
+                <p>
+                    {{article1.content}}
+                </p>
+            </div>
+        </div>
+
+        <div style="height: 8%;">
+
+            <button id="article_btn">
+                <a href="/article1" style="text-decoration: none;"></a>
+                <div id="article_btn_text">CONTINUE READING >></div>
+                </a>
+            </button>
+
+        </div>
+    </div>
+</body>
+
+</html>

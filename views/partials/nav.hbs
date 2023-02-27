@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>ChhattishgarTopNews.com</title>
+    <link rel="stylesheet" href="/static/css/nav_style.css" />
+
+    <div class="header_content">
+    <div class='brand'>
+        <img src="/static/images/{{data.brandName}}" alt="Chattisgarhtopnews">
+    </div>
+
+    <nav>
+        {{#each data.links}}
+        <a class="navbar" href="{{this.url}}">{{this.label}}</a>
+        {{/each}}
+        <a class="nav_img" href="/"><img src="/static/images/search.png" alt="Search"></a>
+    </nav>
+
+</div>
+</head>
+
+<body>
+
+</body>
+
+</html>

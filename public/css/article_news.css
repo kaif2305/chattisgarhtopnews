@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+body
+{
+    margin: 0;
+    
+}
+
+.article-page-continer
+{
+    background-color: rgb(229, 229, 229);
+    padding-bottom: 1%;
+    margin-top: 0.3%;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to bottom, rgb(0 0 0 /50%), rgb(0 0 0 / 25%));
+}
+
+.article_header
+{
+    width: 100%;
+    top:0;
+    height: 45%;
+    margin-bottom: 1%;
+    position: relative;
+    object-position: center;
+    overflow: hidden;
+}
+
+#art_img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    position: absolute;
+
+}
+#art-h-label
+{
+    width: 8%;
+    text-align: center;
+    padding-bottom: 4px;
+    font-size: 13px;
+    padding-top: 4px;
+    font-weight: 600;
+    background-color: red;
+    text-shadow: none;
+    font-family: 'raleway';
+}
+
+.art-header-text
+{
+    position: absolute;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+        top: 20%;
+    /* text-shadow: 0px 1px 4px #000; */
+    font-family: 'raleway';
+    padding-bottom: 3%;
+
+}
+
+.article-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    background-color: white;
+    height: auto;
+    margin-bottom: 1%;
+    position: relative;
+    
+}
+.article-container p{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2% ;
+    font-family: 'raleway';
+    line-height: 25px;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+}
+
+#article-title {
+    font-family: 'Raleway';
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#article-page-image {
+    width: 80%;
+    height: 50% !important;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    display: block;
+}
+
+#article-page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#article-blog {
+    width: 100%;
+    text-align: justify;
+    line-height: 140%;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+
+
+.p-img-container
+{
+    object-fit: contain;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+    height: auto;
+    padding-bottom: 2%;
+}
